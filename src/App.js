@@ -15,7 +15,7 @@ function App() {
 
 
   let getCurrentWeather  = async (city) => {
-      const  url  = 'http://api.weatherapi.com/v1/current.json?key='+API_KEY+'&q='+city
+      const  url  = 'https://api.weatherapi.com/v1/current.json?key='+API_KEY+'&q='+city
 
       try{
           const response = await fetch(url)
@@ -34,7 +34,7 @@ function App() {
 
     
   const futureWeather = async ()=> {
-      const url = 'http://api.weatherapi.com/v1/forecast.json?key='+API_KEY+'&q='+city+'&days=3&aqi=no&alerts=no'
+      const url = 'https://api.weatherapi.com/v1/forecast.json?key='+API_KEY+'&q='+city+'&days=3&aqi=no&alerts=no'
       try{
           const  response = await fetch(url) ;
           const data  = await response.json() ;

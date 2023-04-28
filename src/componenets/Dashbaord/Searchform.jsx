@@ -10,7 +10,7 @@ function Searchform({setCity , setShowForm}) {
 
 
     const  searchResult = async () => {
-        const url = 'http://api.weatherapi.com/v1/search.json?key='+API_KEY+'&q='+searchValue
+        const url = 'https://api.weatherapi.com/v1/search.json?key='+API_KEY+'&q='+searchValue
 
 
         try{
