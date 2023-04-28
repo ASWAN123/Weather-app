@@ -14,7 +14,7 @@ function App() {
   const [temperaturefromat , setTumperature] = useState('c') 
 
 
-  let getCurrentWeather  = async (city) => {
+  const getCurrentWeather  = async (city) => {
       const  url  = 'https://api.weatherapi.com/v1/current.json?key='+API_KEY+'&q='+city
 
       try{
@@ -56,10 +56,10 @@ function App() {
 
 
   return (
-    <div className="App">
-      <div className='flex  flex-col lg:flex-row '>
+    <div className="App max-w-8xl mx-auto  bg-[#1E213A] ">
+      <div className='flex  flex-col lg:flex-row max-h-full '>
         <Dashboard currentWeather = {currentWeather} setCity={setCity} temperaturefromat = {temperaturefromat} setTumperature  = {setTumperature}/>
-        <div className='flex flex-col min-w-[70%] min-h-screen bg-[#100E1D] lg:px-12'>
+        <div className='flex flex-col min-w-[70%] max-h-full bg-[#100E1D] '>
           <NextDays nextdays = {nextdays} temperaturefromat = {temperaturefromat} />
           <Hightlights currentWeather = {currentWeather}  />
           <Footer />
