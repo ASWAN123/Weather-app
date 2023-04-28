@@ -46,7 +46,6 @@ function Dashboard({currentWeather , setCity , temperaturefromat , setTumperatur
                         {/* status icons */}
                         <div className='flex flex-col  justify-center items-center -mt-[12rem] '>
                             <img className='sm:w-[200px] md:w-[300px] lg:w-[150px]  ' src={`http:${currentWeather.current ? currentWeather.current.condition.icon.replace('64x64' , '128x128') :'' }`} alt="" />
-                            
                         </div>
                 </div>
             
@@ -68,7 +67,7 @@ function Dashboard({currentWeather , setCity , temperaturefromat , setTumperatur
                     </div>
 
 
-                    <div className='flex items-center justify-center gap-2 mt-6 lg:mt-1 md:text-[30px] lg:text-[20px]'>
+                    <div className='flex items-center justify-center gap-2 mt-4 mb-4 lg:mt-1 md:text-[30px] lg:text-[20px]'>
                         <FaMapMarkerAlt />
                         <p>{currentWeather.location ?  currentWeather.location.name : "..." }</p>
                     </div>
