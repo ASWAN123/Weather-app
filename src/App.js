@@ -7,6 +7,7 @@ import Footer from './componenets/footer/Footer';
 
 
 function App() {
+  const API_KEY = process.env.REACT_APP_API_KEY
   const [currentWeather  , setCurrentWeather] = useState({})
   const  [nextdays  , setNextdays] = useState([])
   const [city ,  setCity] = useState('10001')
@@ -14,7 +15,7 @@ function App() {
 
 
   let getCurrentWeather  = async (city) => {
-      const  url  = 'http://api.weatherapi.com/v1/current.json?key=0bad43a6462a4c9fbc6111102232203&q='+city
+      const  url  = 'http://api.weatherapi.com/v1/current.json?key='+API_KEY+'&q='+city
 
       try{
           const response = await fetch(url)
@@ -33,7 +34,7 @@ function App() {
 
     
   const futureWeather = async ()=> {
-      const url = 'http://api.weatherapi.com/v1/forecast.json?key=0bad43a6462a4c9fbc6111102232203&q='+city+'&days=3&aqi=no&alerts=no'
+      const url = 'http://api.weatherapi.com/v1/forecast.json?key='+API_KEY+'&q='+city+'&days=3&aqi=no&alerts=no'
       try{
           const  response = await fetch(url) ;
           const data  = await response.json() ;
@@ -42,7 +43,6 @@ function App() {
           
       }catch{
           console.log('there is a  problem')
-
       }
   }
 

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { GrClose } from 'react-icons/gr';
 
 function Searchform({setCity , setShowForm}) {
+    const API_KEY = process.env.REACT_APP_API_KEY
 
     const [ searchValue , setSearchValue] = useState('')
     const  [ results , setResults] = useState([])
@@ -9,7 +10,7 @@ function Searchform({setCity , setShowForm}) {
 
 
     const  searchResult = async () => {
-        const url = 'http://api.weatherapi.com/v1/search.json?key=0bad43a6462a4c9fbc6111102232203&q='+searchValue
+        const url = 'http://api.weatherapi.com/v1/search.json?key='+API_KEY+'&q='+searchValue
 
 
         try{
