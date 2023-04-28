@@ -39,7 +39,6 @@ function App() {
           const  response = await fetch(url) ;
           const data  = await response.json() ;
           setNextdays(data.forecast.forecastday)
-          console.log(data.forecast.forecastday)
           
       }catch{
           console.log('there is a  problem with  api ')
