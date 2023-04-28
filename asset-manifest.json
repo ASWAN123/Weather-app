@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Nws-app/static/css/main.8a2b8bb0.css",
-    "main.js": "/Nws-app/static/js/main.ac9ad40f.js",
+    "main.css": "/Nws-app/static/css/main.a12d5078.css",
+    "main.js": "/Nws-app/static/js/main.e8ba1455.js",
     "index.html": "/Nws-app/index.html",
-    "main.8a2b8bb0.css.map": "/Nws-app/static/css/main.8a2b8bb0.css.map",
-    "main.ac9ad40f.js.map": "/Nws-app/static/js/main.ac9ad40f.js.map"
+    "main.a12d5078.css.map": "/Nws-app/static/css/main.a12d5078.css.map",
+    "main.e8ba1455.js.map": "/Nws-app/static/js/main.e8ba1455.js.map"
   },
   "entrypoints": [
-    "static/css/main.8a2b8bb0.css",
-    "static/js/main.ac9ad40f.js"
+    "static/css/main.a12d5078.css",
+    "static/js/main.e8ba1455.js"
   ]
 }
