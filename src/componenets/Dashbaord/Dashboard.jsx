@@ -23,9 +23,9 @@ function Dashboard({currentWeather , setCity , temperaturefromat , setTumperatur
 
     return (
 
-        <div className='w-full min-h-screen lg:min-w-[30%] lg:max-w-[30%]  flex flex-col gap-2 lg:mr-auto ' >
+        <div className='w-full min-h-screen lg:min-w-[30%] lg:max-w-[30%]  flex flex-col gap-2 lg:mr-auto' >
             <div className='text-white px-4 py-2  flex justify-between   items-center  ' >
-                <button className=' bg-gray-400 p-2  cursor-pointer ' onClick={()=> {setShowForm(true) ; console.log('clicked')}} >Search for places</button>
+                <button className=' bg-gray-400 p-2  cursor-pointer ' onClick={()=> {setShowForm(true) }} >Search for places</button>
                 <button className='bg-gray-400 rounded-[50%] p-2 cursor-pointer' onClick={getuserlocation} ><BsPinMap size={24} color='white' /></button>
             </div>
 
@@ -62,20 +62,20 @@ function Dashboard({currentWeather , setCity , temperaturefromat , setTumperatur
 
                     <p className='text-center text-[48px] font-semibold text-gray-400 md:text-[28px] '>{currentWeather.current ?  currentWeather.current.condition.text : "..." }</p>
 
-                    <div className='flex items-center justify-center gap-2 md:text-[20px]'>
+                    <div className='flex items-center justify-center gap-2 md:text-[18px] lg:text-[24px] '>
                         <p>Today  .</p>
                         <p>{currentWeather.location ?  getcleandate(currentWeather.location.localtime ) : "..." }</p>
                     </div>
 
 
-                    <div className='flex items-center justify-center gap-2 mt-6 lg:mt-1 md:text-[50px] lg:text-[20px]'>
+                    <div className='flex items-center justify-center gap-2 mt-6 lg:mt-1 md:text-[30px] lg:text-[20px]'>
                         <FaMapMarkerAlt />
                         <p>{currentWeather.location ?  currentWeather.location.name : "..." }</p>
                     </div>
                 </div>
 
                 {/* c of  f   */}
-                <div className='text-white  hidden md:flex md:gap-2 md:mt-3'>
+                <div className='text-white  hidden md:flex md:gap-2 md:mt-3 p-6 '>
                     <button onClick={() => { setTumperature('c') }} className={ temperaturefromat === 'c' ? ' rounded-xl bg-gray-600  p-2' : ' rounded-xl bg-white  p-2' }><TbTemperatureCelsius size={25} color={ temperaturefromat ==='c' ? 'white' :'black' } /></button>
                     <button onClick={() => { setTumperature('f') }} className={ temperaturefromat === 'f' ? ' rounded-xl bg-gray-500  p-2' : ' rounded-xl bg-white p-2' } ><TbTemperatureFahrenheit color={ temperaturefromat ==='f' ? 'white' :'black' }  size={25}/></button>
                 </div>

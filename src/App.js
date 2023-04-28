@@ -20,7 +20,7 @@ function App() {
       try{
           const response = await fetch(url)
           const data = await response.json()
-          console.log(data)
+          
           setCurrentWeather(data)
 
       }catch{
@@ -42,7 +42,7 @@ function App() {
           console.log(data.forecast.forecastday)
           
       }catch{
-          console.log('there is a  problem')
+          console.log('there is a  problem with  api ')
       }
   }
 
