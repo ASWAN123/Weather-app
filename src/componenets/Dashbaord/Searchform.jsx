@@ -37,7 +37,7 @@ function Searchform({setCity , setShowForm}) {
         <div className='h-screen w-full bg-slate-900 '>
             
             <div className='flex justify-between items-center gap-2'>
-                <input className='w-full h-[50px] bg-transparent border p-3 ' placeholder='Search for location' type="text" name="place" id=""  value={searchValue} onChange={(e)=> {setSearchValue(e.target.value)}}/>
+                <input className='w-full h-[50px] bg-transparent  p-3 ' placeholder='Search for location' type="text" name="place" id=""  value={searchValue} onChange={(e)=> {setSearchValue(e.target.value)}}/>
                 <button onClick={searchResult} className=' bg-blue-500 px-4 py-3 '>Search</button>
             </div>
 
