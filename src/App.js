@@ -55,7 +55,7 @@ function App() {
 
 
   return (
-    <div className="App  max-w-8xl  bg-[#1E213A] ">
+    <div className="App container mx-auto  max-w-8xl  bg-[#1E213A] ">
       <div className='flex  flex-col lg:flex-row max-h-full '>
         <Dashboard currentWeather = {currentWeather} setCity={setCity} temperaturefromat = {temperaturefromat} setTumperature  = {setTumperature}/>
         <div className='flex flex-col min-w-[70%] max-h-full bg-[#100E1D] '>
