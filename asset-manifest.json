@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.69bb96bc.css",
-    "main.js": "/static/js/main.471de576.js",
-    "index.html": "/index.html",
-    "main.69bb96bc.css.map": "/static/css/main.69bb96bc.css.map",
-    "main.471de576.js.map": "/static/js/main.471de576.js.map"
+    "main.css": "/Nws-app/static/css/main.69bb96bc.css",
+    "main.js": "/Nws-app/static/js/main.471de576.js",
+    "index.html": "/Nws-app/index.html",
+    "main.69bb96bc.css.map": "/Nws-app/static/css/main.69bb96bc.css.map",
+    "main.471de576.js.map": "/Nws-app/static/js/main.471de576.js.map"
   },
   "entrypoints": [
     "static/css/main.69bb96bc.css",
